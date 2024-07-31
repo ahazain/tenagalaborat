@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:tenagalaborat/mainscreeen.dart';
+import 'package:tenagalaborat/riwayat.dart'; // Import Riwayat
 
 class Hematologi extends StatefulWidget {
   final String patientId;
@@ -40,7 +42,12 @@ class _HematologiState extends State<Hematologi> {
           actions: [
             TextButton(
               onPressed: () {
-                Navigator.pop(context);
+                Navigator.pop(context); // Close the dialog
+                Navigator.pushAndRemoveUntil(
+                  context,
+                  MaterialPageRoute(builder: (context) => MainScreen()),
+                  (route) => false,
+                ); // Navigate to Riwayat page
               },
               child: Text('OK'),
             ),

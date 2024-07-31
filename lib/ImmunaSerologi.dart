@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:tenagalaborat/main.dart';
 
 class ImmunaSerologi extends StatefulWidget {
   final String patientId;
@@ -40,7 +41,12 @@ class _ImmunaSerologiState extends State<ImmunaSerologi> {
           actions: [
             TextButton(
               onPressed: () {
-                Navigator.pop(context);
+                Navigator.pop(context); // Close the dialog
+                Navigator.pushAndRemoveUntil(
+                  context,
+                  MaterialPageRoute(builder: (context) => MainScreen()),
+                  (route) => false,
+                ); // Navigate to MainScreen page
               },
               child: Text('OK'),
             ),
