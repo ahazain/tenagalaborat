@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "135449099",
+    "project_id": "petugas-laboratorium",
+    "storage_bucket": "petugas-laboratorium.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135449099:android:e31e4ab42545c7bf5fd50e",
+        "android_client_info": {
+          "package_name": "com.example.tenagalaborat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPVtuBaOg6i4Dh8IzfO3aXPGaLPhSphJo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
